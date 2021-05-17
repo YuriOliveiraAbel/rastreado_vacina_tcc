@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:rastreador_vacina_tcc/app/components/drawer.dart';
 
 class NewShipping extends StatefulWidget {
   @override
@@ -77,6 +76,12 @@ class _NewShippingState extends State<NewShipping> {
       appBar: AppBar(
         title: Text('Nova Remessa'),
         centerTitle: true,
+        actions: [
+          IconButton(
+            icon: Icon(Icons.camera_alt),
+            onPressed: () {},
+          )
+        ],
       ),
       body: Container(
         padding: EdgeInsets.symmetric(vertical: 12),

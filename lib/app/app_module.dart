@@ -1,5 +1,6 @@
 import 'package:rastreador_vacina_tcc/app/screens/home_screen.dart';
 import 'package:rastreador_vacina_tcc/app/screens/new_shipping.dart';
+import 'package:rastreador_vacina_tcc/app/screens/shipping_detail.dart';
 import 'package:rastreador_vacina_tcc/app/screens/shipping_list.dart';
 
 import 'app_widget.dart';
@@ -18,6 +19,12 @@ class AppModule extends MainModule {
           '/shipping_list',
           child: (_, args) => ShippingList(
             shippings: args.data,
+          ),
+        ),
+        ModularRouter(
+          '/shipping_detail',
+          child: (_, args) => ShippingDetail(
+            shipping: args.data,
           ),
         ),
       ];

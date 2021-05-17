@@ -9,6 +9,7 @@ class ShippingModel {
   int qtdDosesReceb;
   String respEnvio;
   String respReceb;
+  String descricao;
 
   ShippingModel(
       {this.numero,
@@ -20,7 +21,8 @@ class ShippingModel {
       this.qtdDoses,
       this.qtdDosesReceb,
       this.respEnvio,
-      this.respReceb});
+      this.respReceb,
+      this.descricao});
 
   ShippingModel.fromJson(Map<String, dynamic> json) {
     numero = json['numero'];

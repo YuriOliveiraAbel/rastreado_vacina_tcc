@@ -9,7 +9,7 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   Widget infos(IconData icon, String count, String title) {
     return Container(
-      padding: EdgeInsets.symmetric(vertical: 8),
+      padding: EdgeInsets.symmetric(vertical: 8, horizontal: 8),
       child: Align(
         alignment: Alignment.center,
         child: Column(
@@ -71,9 +71,9 @@ class _HomeScreenState extends State<HomeScreen> {
                       'Remessas Recebidas',
                     ),
                     infos(
-                      Icons.flight_takeoff,
-                      '230',
-                      'Remessas recebidas',
+                      Icons.info,
+                      '000',
+                      'Outra Informação',
                     ),
                   ],
                 ),
